@@ -1,1 +1,40 @@
 
+ 1. What is Database?
+    Database is collection structured data.
+    A database is an organized collection of structured information, or data,
+    typically stored electronically in a computer system.
+    A database is usually controlled by a database management system (DBMS). 
+    Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system
+    
+ 2. What is Schema?
+    Schema is a logically representation of database.
+    A database schema is the skeleton structure that represents the logical view of the entire database.
+    It defines how the data is organized and how the relations among them are associated
+    
+ 3. Whast is Structered database? 
+    Structured data is data that has been predefined and formatted to a set structure before being placed in data storage
+    
+    Types of database
+      Structured Data
+      Unstructured Data
+      Semi-Structured Data
+    
+    Structured Data
+      Structured data are those type of data which ara stored already in an order, There are neary 20% of the total existing data are structured data.
+      All the generated from sensors,webblogs,there are all machine generated structured data. the human generated structured data are those which are taken 
+      as information from a human. Like their names,dob etc.
+      Example if structured data is database.
+    
+    Unstructured Data
+      The Unstructured data have no clear format in storage. We can store structured data in row-column database. But unstructured data can not be store like that.
+      At lest 80% of data are unstructured. All satelite-generated images,sceintific data or images are categorized as machine-generated unstructured data.
+      There  are varius types of human-generated unstructured data. These are iamges, videos,social media data etc.
+      The example of unstructured data are text documents, pdfs images and vides etc.
+    
+    Semi-structured Data
+      It is very difficult  to categorize the type of data. Sometimes they look structured or sometimes unstructured. So that's why these data are known as semi-structured
+      data. We can not store these type of data using tradional databasde format, But it contains some organizetional  properties.
+      The example of semi-structured data are spread sheet files, XML or json documents, NoSQL database items etc.
+      
+       
+    
