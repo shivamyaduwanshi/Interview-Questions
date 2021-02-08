@@ -36,5 +36,14 @@
       data. We can not store these type of data using tradional databasde format, But it contains some organizetional  properties.
       The example of semi-structured data are spread sheet files, XML or json documents, NoSQL database items etc.
       
-       
+    What is database.   
+    Database is a collection of structured data. A DBMS consists of a collection of  
+    interrelated data and a set of programs to access that data.
     
+    What is SQL
+    Structured Query Language (SQL) is the standard command set used to communicate with the relational database management systems.
+    All tasks related to relational data  management creating tables, querying the database for information. Modifying the data in the database, deleting them ,
+    granting access to users and so on can be done using SQL.
+
+    
+
