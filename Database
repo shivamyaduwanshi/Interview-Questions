@@ -1,17 +1,17 @@
 
- 1. What is Database?
+  What is Database?
     Database is collection structured data.
     A database is an organized collection of structured information, or data,
     typically stored electronically in a computer system.
     A database is usually controlled by a database management system (DBMS). 
     Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system
     
- 2. What is Schema?
+  What is Schema?
     Schema is a logically representation of database.
     A database schema is the skeleton structure that represents the logical view of the entire database.
     It defines how the data is organized and how the relations among them are associated
     
- 3. Whast is Structered database? 
+  Whast is Structered database? 
     Structured data is data that has been predefined and formatted to a set structure before being placed in data storage
     
     Types of database
@@ -103,12 +103,12 @@
  What is a stored procedure? Give an example
    A Stored procedure is a prepared SQL code which can be saved and resued
 
-11. What do you understand about join? Explain about different joins
+ What do you understand about join? Explain about different joins
     A join clause is used to combile record form two or more tables in a database
     Join is a query in which data is retrieved from two or more table.
     A join matches data from two or more tables, based on the values of one or more columns in each table.
 
-12. Need Of Join
+ Need Of Join
     In a database where the tables are normalized, one table may not give you all the information about a particular entity. 
 
      Different joins 
