@@ -44,6 +44,79 @@
     Structured Query Language (SQL) is the standard command set used to communicate with the relational database management systems.
     All tasks related to relational data  management creating tables, querying the database for information. Modifying the data in the database, deleting them ,
     granting access to users and so on can be done using SQL.
+    
+    
+  Database 
+    Database is a collection of structured data.
+
+  What is DBMS
+    Database is a collection of structured data.
+    A DBMS consists of a collection of interrelated data and a set of programs to access that data.
+  
+  What is data types
+  A Data Type specifies a particular type of data, like integer, floating points, Boolean, etc. ...
+  In MySQL, each database table has many columns and contains specific data types for each column.
+
+  What is SQL.
+    SQL stands for structured Query Language and it is used for communicating with the database.
+    according to ANSI There is a standard query language for relational database management
+    systems whitch is used for maintaining the relational database and also the perform different
+    operations of data manipulation on different types of data so sql is widely used language for maintaining relational database
+    so basically it is a database language which is used for creation and deletion of database and it can be used to fetch and
+    modify rows form the table and also multiple other things
+
+
+  Explain about the different types of SQL Commands
+   SQL Commands divided into 4 categories
+
+   1. Data Query Language         (Select)
+   2. Data Definition Language    (Create Table,Alter Table, Drop Table)
+   3. Data Manipulating Lanuage   (Insert,Update,Delete)
+   4. Data Control Lanuage        (Grant,Revoke)
+
+  What are constraints? Explain about default and unique constraints.
+   Constraints are used to specity rules for data in table
+   
+   Default constraints sets a default value for a column when no value is specified
+   Unique constraint ensures that all values in a column are different
+
+  How would you find the 2nd highest salary from the table?
+   select max(salary) from emp where salary not in(select max(salary) from emp)
+   select * from emp order by desc salary limit 2,1
+
+  What do you understand by Normalization and De-Normalization
+   Normalization is the process of reducing data redundancy by organizing field and table of a database
+   Denormalization is the process of adding redundant data to speed up complex queries.
+
+  What is different between having and group by?
+
+  What do you know about stuff() function?
+   Stuff function delete part of the string and then insert another part into the string
+   stuff(string1,position,length,string2);
+   select stuff(''shiv tutorial' , '1' , '4' , 'Shivam' );
+   Result shivam tutotial
+
+  What is view? Give an example
+   A view is a virtual table based of the result set of a sql statement.
+   CREATE VIEW vendor as select * from employees where role = 1
+
+ What is a stored procedure? Give an example
+   A Stored procedure is a prepared SQL code which can be saved and resued
+
+11. What do you understand about join? Explain about different joins
+    A join clause is used to combile record form two or more tables in a database
+    Join is a query in which data is retrieved from two or more table.
+    A join matches data from two or more tables, based on the values of one or more columns in each table.
+
+12. Need Of Join
+    In a database where the tables are normalized, one table may not give you all the information about a particular entity. 
+
+     Different joins 
+            - Inner Join
+            - Left Join
+            - Right Join
+            - Full Join
+    Inner Join
 
     
 
