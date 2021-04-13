@@ -1,1 +1,87 @@
 
+1. What is oops
+   Ooop stands for object oriented programming system. It is a methologi or paradize to desing a program using classes and object.
+   It is a technique a program to focus on object. in other words we can say that oops is a guidlines for developers to develop application
+   in manageable aur more efficent
+   
+   Abstruction
+   Encapsulation
+   Inheritance
+   Polyformizm
+   
+   Abstruction
+       Abstraction is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information.
+       The main purpose of abstraction is hiding the unnecessary details from the users.
+       It helps in reducing programming complexity and efforts.
+   
+   Encapsulation
+       Encapsulation is an Object Oriented Programming concept that binds together the data and functions
+       that manipulate the data, and that keeps both safe from outside interference and misuse.
+       ... All variables or functions defined after the public specifier are accessible by all other functions in your program
+       In normal terms Encapsulation is defined as wrapping up of data and information under a single unit.
+       In Object Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulates them
+       
+       
+    Inheritance
+    Inheritance is a process in which one object acquires all the properties and behaviors of its parent
+    The capability of a class to derive properties and characteristics from another class is called Inheritance
+     
+    Polymorphism
+    one name with multiple form
+    
+    php doesn't support function overloading
+    
+    
+   What is PEAR?
+   PEAR stands for PHP Extension and Application Repository PEAR is a distribution system for reusable PHP libraries or classes.
+   A structured library of open-source code for PHP user
+   
+   PECL:( PHP Extension Community Library)
+   As the name suggests PECL is a repository for php extensions
+   
+   COMPOSER
+   Composer is a dependency management tool in php
+   
+   What is PHP?
+   PHP is a server side scripting language.This means that it is executed on the server. that is used to develop Static websites or Dynamic websites or Web applications.
+   PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages
+   
+   What is a Scripting Language?
+   A script is a set of programming instructions that is interpreted at runtime.
+   A scripting language is a language that interprets scripts at runtime. Scripts are usually embedded into other software environments.
+   
+   
+   Why we use php
+   1. PHP is open source and free.
+   2. Easy to learn
+   3. Most web hosting servers support PHP by default 
+   4. PHP has in built support for working hand in hand with MySQL
+   5. PHP is cross platform; this means you can deploy your application on a number of different operating systems such as windows, Linux, Mac OS etc.
+   
+   What is the meaning of a final class and a final method
+   Final class means that this class cannot be extended and a final method cannot be overridden
+   
+    What type of operation is needed when passing values through a form or an URL?
+    If we would like to pass values through a form or an URL, then we need to encode and to decode them using htmlspecialchars() and urlencode().
+    
+    How can PHP and Javascript interact?
+    PHP and Javascript cannot directly interact since PHP is a server side language and Javascript is a client-side language. However, we can exchange variables since PHP can generate Javascript code to be executed by the browser and it is possible to pass specific variables back to PHP via the URL.
+   
+    What is needed to be able to use image function?
+    GD library is needed to execute image functions.
+    
+     What are the functions to be used to get the image's properties (size, width, and height)?
+     The functions are getimagesize() for size, imagesx() for width and imagesy() for height.
+     
+     https://intellipaat.com/blog/interview-question/php-interview-questions/
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   
