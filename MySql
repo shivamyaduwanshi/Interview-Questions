@@ -32,6 +32,9 @@ Find second highest salary
            Foreign key can be duplicate and also be NULL value
            
      secondary key
+        
+     
+     
  
  Aggregate Function
     To perform calculation on multiple rows of a single column. It retuns single value it is used to sysmmetric data
@@ -99,8 +102,74 @@ Find second highest salary
                    -> It is faster than sub-queries
                  
                
-                  
-   
+             Union Vs Join
+                Union
+                  -> Combine Rows
+                  -> Not nessary to have same column name
+                  -> But  no. of column & datatype of column should be same
+                
+                Join
+                   -> Merge Column
+                   -> Combine rows from two or more tables based on a related common column between them
+                   
+           
+      Delete Duplicated rows form database
+         1. Using a tempary table
+         2. using auto id
+         3. using row_numbers()
+         4. using CTE
+         
+         1. Using a tempary table
+              step 1  select distict * into temptable from oldtable
+              step 2  delete from old table
+              step 3 Inset INTO oldtable select * from temptable
+              step 4 DROP table temptable
+              
+         2. Using auto id
+              Delete from employees where auto_id not in (select min(auto_id) from employees group by emp_id,name) 
+              
+         3. Delete from (select * , row_number() over(partition by id order by id) as rn from mytable ) wheren rn > 1   
+          
+               
+        Delete v/s Truncate / v/s
+          Delete
+            -> Comes under DML lanuage
+            -> Delete removes some or all the rows or remoe specified row
+            -> It does not free space containning the table
+            -> The transaction log will still have the deleted rows
+            -> rolled up
+            -> slower
+            -> DELETE FROM employees where id = 1;
+           
+            Truncate
+              -> COmes under DDM language
+              -> Delete all the rows
+              -> It free up the space containng the table
+              -> no where clause
+              -> can not be rolled up
+              -> faster
+              -> TRANCATE TABLE employees
+              
+            Drop
+              -> Remove table from the databse
+              -> cannot be rolled up
+              -> DROP TABLE employees
+              
+              
+            Increase income of all employees by 5% in a table
+              UPDATE employees SET income = income + (income * 50/100)
+              
+            find name of emlolyees starting with 'A'
+               select fist_name from employees where first name like 'A%'
+            
+            find number of employees working in department abc
+               select count(*) from employees where department = 'ABC'
+               
+            Print details of employees whose first name end with 'A' and contains 6 alphabets
+              select * from employees where first_name like '_____A'
+              
+            Print Detials of employees whose salary lies betbeen 10000 and 50000
+               select * from employees where salary betbeen 1000 and 50000
    
    
     
