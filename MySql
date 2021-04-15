@@ -30,6 +30,7 @@ Find second highest salary
      Foreign Key
            A foreign are attributes in a table. whose value match as primary key in another table.
            Foreign key can be duplicate and also be NULL value
+           FOreign key is used to integrity of the data
            
      secondary key
         
@@ -171,7 +172,167 @@ Find second highest salary
             Print Detials of employees whose salary lies betbeen 10000 and 50000
                select * from employees where salary betbeen 1000 and 50000
    
-   
-    
+          
+          Different Between Char and varchar
+             Char
+               -> It store data with fixed length
+               -> uses static memory allocation
+               -> faster
+               -> It can be used for phone number OR zipcode
+               
+             varchat
+               -> It store data with variable length
+               -> It uses dynamic memory allocation
+               -> better for storage space
+               -> slower
+               -> has an head of 2 bytes
+          
+          ON Delete Cascade vs On Delete Set Null
+              On delete cascade
+                 -> delete all the dependent rows from the child
+              
+              On Delete Set Null
+                 -> Child data set to be null
+                 
+                 create table  employees(
+                   Foreign Key (city_id) References cities (city_id) on delete cascade
+                 )
+               
+           
+           TCL (Transaction control Language)
+               -> To manage transactions in a DB
+               -> To manage changes made to data in a table by DML statements
+               
+               1. Commit
+                   -> To permanently save a transation
+                   -> changes mady by insert, delted, updated are pernament
+               2. save point
+                   -> used to tempority save a transaction
+                   -> so that you can rollback to that point save point name
+               
+               3. Rollback
+                  -> Restores the DB to last commited state
+                  -> Alse used with save point
+                     Rollback To savepoint
+                      
+             DQL(DATA query language)
+                -> To fetch data from DB
+                
+              DCL (Data Control language)
+                ->To perform any operation in the DB a user needs privileges
+                -> Grant
+                -> Revoke
+              
+              Grant create session to user
+              Grant create table to user
+              Grant sysdba = All Privilege
+              
+              Revoke create table from user
+                Example
+                   Grant privilage_name on object_name to user
+                   Revoke On From 
+                   
+                   Grant All on students To shiv
+                   Revoke upate on students from shiv
+                   
+             DML(Data Manipulation language)
+               -> Manipulating of data present in the DB
+               -> insert,update and delete
+               
+             DDL(Data Defination table)
+               -> Sql command to define the database schema
+                  (Create or modity the structure of database objects in the DB)
+                   Create , Drop, Alter, Truncate, Rename
+                   
+                   1. create table employees(
+                      emp_id int,
+                      name varchar(100)
+                   )
+                   2. Drop Table employees
+                   3. Alter table employees Add email varchar(100)
+                   4. Tracate table employees
+                   5. Alter table employees
+                   6. Alter table employees Rename to student
+                   7. Rename employees to students
+            
+            
+            Sql query to find hight salry in dept
+               select dep_id , max(salary) from employees group by dep_id
              
-    
+            Sql query to find all duplicate email in a table
+               select email from employees group by email having count(email) > 1
+               
+            Triggers
+              stored prograrams which are automatically fired / executed when some event occurs
+                DML, DDL, DB  operation
+                
+             Syntax 
+                Create  Or Replace Trigger trigger_name
+                Befor|After
+                insert|update|delete
+                of  column_name
+                on  table_name
+                referencing old as a newas n
+                for each row
+                when (condition)
+                declare
+                Begin
+                exception
+                Example
+                   create TriGGER employee_status
+                   Befor
+                   Insert
+                   On customers
+                   for each row
+                   where (New.id > 0)
+                   Declare
+                   
+         Exeption
+           Error condition during a program execution
+              1 System defined exception
+              2. User Defined exception
+          
+          
+          Fetch emp name in upper case & use alias 
+            select employname as UPPER(employees.first_name) from employees;
+          
+          Fetch top N records
+            select TOP N * from employees order by salary desc
+            
+          Retrieve emp first name and emp last name in a single column as full name 
+          first name and last name seperated with space
+             select CONCAT(emp_fist_name,' ',emp_last_name) as full_name from employees
+             
+          Retrive emp position along with total salaries paid for each of them
+              select emp postion , sum(salary) from emplyees group by emp.position
+              
+          Fetch detail of emoloyees with address as Delhi(DEL)
+             select * from employees where addess like 'Delhi(DEL)'
+          
+          Fetch only the first name from full name column
+            select substring(fullname,0,charindex('',fullname)) from employees
+            
+          Fetch duplicate record from table
+            select empid,dept,count(email) from employees group by empid id , dept having count(email) > 1
+            
+          Remove duplicate record
+             delete form employees where emp.id in (select emp.id from employees group by dept having count(dept) > 1 )
+             
+          create empty talbe withsame stucture as same other table
+            select * into newtable from old table oldtable where i = 1;
+          
+          Fetch comman record 1 bet2 tables
+           select * from table1
+           intersect
+           select * from table2
+           
+     
+          
+          
+           
+          
+             
+          
+          
+          
+           
