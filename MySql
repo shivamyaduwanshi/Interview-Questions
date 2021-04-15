@@ -1,1 +1,108 @@
 
+Find second highest salary
+ 1. Max 2. Limit 3. Top
+    Using Max
+    select max(salary) from employees where salary < (select max(salary) from employees); 
+    
+    Using Limit
+    select salary from employess order by salary desc limit 1,1
+    select salary from ( select salary from employees order by salary asc limit 2 ) order by desc limit 1 
+    
+    Using Top
+    select Top 1 salary from employees where salary < (select Top 2 salary from employees order by);
+    
+ Key
+   Key is a set of one or more attritutes, which is used to uniquely identification row within a table.
+   
+   Types of keys
+     Super key 
+            Super key is a set of one or more attributes that uniquely identifies each record with in a table
+            In super key attributes there must be a attributes which uniquely identifies the record. It can be extra attributes
+            
+     Condidate key 
+           Candidate key is a minimal super key which contains no extra attributes. It consists of maximum possible attributes which is uniquely  identifies.
+           candidate key is not null
+           
+     primary key
+           Primary key is a attribute, which is uniquely identifies each record with in a table
+          
+     composite key
+     Foreign Key
+           A foreign are attributes in a table. whose value match as primary key in another table.
+           Foreign key can be duplicate and also be NULL value
+           
+     secondary key
+ 
+ Aggregate Function
+    To perform calculation on multiple rows of a single column. It retuns single value it is used to sysmmetric data
+        1. count, 2. max, 3. min, 4.sum, 5.avg
+     
+   Difference Between
+         Where and Having
+               Where
+                  -> where is used to filter rows
+                  -> works on rows data, not aggregated data
+                  -> select * from employees where salary > 50,000
+               Having
+                  -> works on aggregated data
+                  -> select max(salary) as salary from employees having max(salary) > 50,000
+         
+         Union and Union ALl
+               Union
+                  -> Remove duplicate records
+               
+               Union All
+                  -> Give also duplicate records
+                  
+               Notes* 
+                 -> Union operator combine result set of two or more select statement
+                 -> Each select statement must have
+                     -> Same number of columns
+                     -> Column must have similary data types
+                     -> Column must be a same order
+                     
+                     
+            In v/s Exists
+                In
+                  -> Multiple OR
+                  ->select * from customers where city in (indore,bhopal,bangluru) or select * from customers where city in (select city from cites);
+                  -> Big Outer query and small inner query
+                Exist
+                   -> Exist return TRUE or FALSE value
+                   -> Small outer query and big inner query
+                   -> select * from customers where city exist (select city from cites where city.city_id = customer.city)
+            
+            
+           Order By / Group By
+                 Order By
+                    -> Sorting
+                    -> default (Ascenging)
+                    -> asc and desc
+                    -> select * from salary order by salary desc
+                 Group By
+                    -> Group By used for aggregate function
+                    -> select name  , count(is_active) from empoloyees group by is_active
+                    
+                    Notes*
+                       -> Group by  follows where clause in select statements
+                       -> where can not be used after group by 
+                       -> Having is used after group by
+                       
+            Join v/s Subquery
+                 Both are used to combine data from different tables witn a single data
+                 Sub Query
+                   -> can select only from first table
+                   -> It is slower than join
+                 
+                 Join
+                   -> Can select from either of the table
+                   -> It is faster than sub-queries
+                 
+               
+                  
+   
+   
+   
+    
+             
+    
