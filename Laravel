@@ -1,1 +1,74 @@
-
+What is laravel Server container
+   The Laravel service container is a technique for managing class dependencies and performing dependency injection
+   
+   The container is just a bindings of an array in which put some objects and whenever we need to get that.
+   
+   Container is just a list of all the bindings in just a single array called bindings inside this container container class
+   Container is array of items where we put something we can get something whenever we wnat 
+   
+   
+What is laravel bootstraped
+  boostrapt is register event, routes, middele and routes etc ready application for us
+  
+Service Provider
+  services to provide to service container by the service provider
+  
+  service providers are the central place to configure aur application.
+  
+  service provider are just a simple PHP class but these class loaded every request some dererred
+    -> All service providers are availabe at config/app.php
+    -> Some loaded for every request
+    -> Some are deferred
+  
+  Every service class two methods
+     1. Registered method, Bind to things to service container
+     2. Boot method, service availabe when are application ready
+  
+  Faceds
+     faceds provide us no-static interface to static interface
+     
+     
+  How can we know which laravel version we are using in project?
+    1. php artisan -version
+    2. composer.json this is located in root
+  
+  What is laravel LTS Version of laravel
+    LTS stands for long term support
+     
+  PHP Artisan  Command
+    Artisan commond is command line intercase
+        To clear 
+          php artisan cache:clear
+          php artisan view:cleae
+          php artisan route:cache
+          php artisan config:cache
+          
+    In laravel HOow we can extend login expire time in login auth
+        config/auth.php
+        
+    Composer 
+      Composer is a tool for manage dependency in php Dependency means suppose we want to install
+      Laravel Framework laravel require other packages so if install larael by composer then laravel
+      install and other required package is also install
+      
+      
+      How many routes generate by Auth::routes();
+        Authentication Routes
+        Registration Routes
+        
+    
+      git init
+      git add README.md
+      git commit -m "first commit"
+      git branch -M main
+      git remote add origin https://github.com/shivamyaduwanshi/test.git
+      git push -u origin main
+      
+          
+          
+          
+  
+  
+   
+   
+   
