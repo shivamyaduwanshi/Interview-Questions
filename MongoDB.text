@@ -1,0 +1,207 @@
+
+What is MongoDB
+   Mongodb is cross-platform, ducument oriented batabase that
+   provides, high performance high availibility and easy scalability
+
+MongoDB works on concept of collection and document.
+
+It's support the basic and advanced concept of sql
+
+MongoDB is open-source dababase management system
+
+It is designed to work with commodity servers.
+so it is acceptable all to types of industris.
+
+Advantages of mongodb over RDBMS
+   -> Schema less
+   -> No complex join
+   -> Easy to Scale-out
+
+Why we use mongoDB
+
+   Document oriented storage
+   Auto sharding
+   Fast in place updates
+
+Where we can use mongoDB
+   Big Data
+   Content management and delivery
+
+MongoDB features
+   - Ad-hoc queries
+   - Aggregation
+   - Schema-less database
+   - GridFS
+   - Document Oriented
+   - Sharding
+   - Indexing
+   - Hight Performance
+   - Replication
+
+   Ad-Hoc queries
+      Ad-Hoc queries are those type of queries which are
+      not known while structuring the database
+      MongoDB supports are type of queries. These queries
+      can also be updated in realtime
+
+   Aggregation
+      MongoDB has aggregation framwork. We can batch the 
+      process the data and get single result after doing 
+      some sequence of tasks on group of data
+
+   Schema-less database
+      In this case different document can have different
+      fields. The size, content, type may vary for different field.
+      So there is a flexiblity in dealing with data
+
+   GridFS
+      GridFS is a framwork to store and access large set of data.
+      It divides the data into chunk and store them into 
+      different documents.
+
+
+   Document Oriented
+      MongoDB is document oriented database. there are
+      different documents to store different types of data.
+      Each document has unique system generated key
+
+
+   Sharding
+      For large set of data we need the sharding mechanism.
+      It helps to distrubute large problematic data into
+      some mongoDB instances.
+      Sharding is a type of database partitioning that
+      separates very large database the into smaller
+      faster more easily managed parts called data
+      shards
+
+   Indexing
+     Indexing in one of the important option to improve
+     the search query performances. So we should index
+     those fields which are matched with our searching
+     criteria
+
+   High Performance
+      MongoDB shows high availability and scalability.
+      it has better query response for indexing and 
+      replication
+
+   Replication
+     This feature creates the copy of documents into
+     different machines. We can have primary node or
+     its replicated nodes. When the primary node
+     can not work for some reason, then the replicated
+     or secondary nodes can take care of it.
+
+
+   what are the different MongoDB Components?
+   MongoDB Components are :-
+     1. Documents
+     2. Collection
+     3. Databases
+
+     Documents in MongoDB
+        The documents are the set of key-value pairs. The
+        documents have dynamic shcema. So for the documents
+        in the same collection may or may not have same set
+        of fields.
+     
+     Collection in MongoDB
+        The collections are the set of MongoDB documents. It is like the table of RDBMS. Collection do not enforce a schema. Documents within a collection can have different fields. Typically all documents in a collection are of similar or related purpose
+     
+     Database in MongoDB
+        The Database is the physical collection of containers.
+        A single MongoDB server typically has multiple databases.
+     
+     What is JSON?
+       The JSON is Java Script Object Notation. Is a format
+       to store and interchange data.
+
+       JSON is user readable and completely language 
+       independent
+
+       It is light weight. We can send information through
+       JSON very easily.
+     
+     JSON Document _id
+       _id is a 12 bytes hexadecimal number which assures
+       the uniqueness of every document.
+       We can provide _id while inserting the document.
+       If you don't provide then MongoDB provides a unique id 
+       for every document
+
+       These 12 bytes has
+           - First 4 bytes for the current timestamp
+           - Next 3 bytes for machine id
+           - Next 2 bytes for process id of MongoDB server
+           - Last 3 bytes are simple incremental VALUE
+       
+       What is BSON
+          The BSON is the Binary JavaScript Object Notation
+
+          In MongoDB the use BSON to encrypt the JSON data
+
+          It provides additional datatypes over the JSON data
+
+          It is also language independent and easy to parse
+          and generate files from the machine
+
+      What is MongoDB Enterprise
+          The MongoDB has two different licences
+
+      1. MongoDB : MongoDB is the basic free version tool.
+
+      2. MongoDB Enterprise : It is under the Commercial license.
+         It also have some advanced features.
+
+      MongoDB Enterprise
+
+         Features of MongoDB Enterprise
+            1. In the MongoDB Enterprise, the have included Advanced
+               Security features, Management tools, Software Integration etc.
+            
+            2. It also provides the Certification
+
+            3. These features are not availabe on the basic open source 
+               MongoDB edition
+
+      How to show all database
+          show dbs
+        
+      How to create database
+           In the mongo shell type :
+           use <datebase name>
+           it will create a new database and use it as current database
+
+      How to show all collections
+          show collections
+       
+
+      Development Enviroment
+         In the MongoDB Development
+
+
+      
+
+
+          
+
+
+
+        
+
+
+
+       
+
+
+
+
+     
+
+
+
+
+
+
+
