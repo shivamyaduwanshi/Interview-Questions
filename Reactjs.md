@@ -375,7 +375,9 @@ You can download the PDF and Epub version of this repository from the latest run
     
 3. ### What is JSX?
 
-    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
+    JSX stands for JavaScript XML.
+    JSX allows us to write HTML in React.
+    JSX makes it easier to write and add HTML in React.
 
     In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
 
