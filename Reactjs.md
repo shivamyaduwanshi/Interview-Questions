@@ -374,23 +374,29 @@ You can download the PDF and Epub version of this repository from the latest run
    **[⬆ Back to Top](#table-of-contents)**
     
 3. ### What is JSX?
-
     JSX stands for JavaScript XML.
     JSX allows us to write HTML in React.
     JSX makes it easier to write and add HTML in React.
 
-    In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
+    JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.
 
-    ```jsx harmony
-    class App extends React.Component {
-      render() {
-        return(
-          <div>
-            <h1>{'Welcome to React world!'}</h1>
-          </div>
-        )
-      }
-    }
+    Here are two examples. The first uses JSX and the second does not:
+
+    Example 1
+    JSX:
+
+    ```
+    const myelement = <h1>I Love JSX!</h1>;
+    ReactDOM.render(myelement, document.getElementById('root'));
+
+    ```
+
+    Example 2
+    Without JSX:
+
+    ```
+    const myelement = React.createElement('h1', {}, 'I do not use JSX!');
+    ReactDOM.render(myelement, document.getElementById('root'));
     ```
 
 
