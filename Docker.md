@@ -73,6 +73,12 @@
 
        // Docker Inspect
           docker inspect <docker-image>
+
+       // Docker history 
+          docker history <docker-image>
+
+       // Docker image save or copy
+          docker save -o <path>/<docker-imaeg>
         
        // Other command
           docker login
@@ -85,4 +91,19 @@
           docker info
           docker --help
  
-       
+  ### 7. What is Docker-compose
+         Compose is a tool for defining and running multi-container
+         applications. With compose, you use a YAML file to configure your
+         application's services Then, with a single command, you
+         create and start all the services from your configuration
+
+### 8. What is Docker Volume?
+        In order to be able to save data and also to share data 
+        between  containers, Docker came up with the concept of
+        volumes. Volumes are directories (or files) that are 
+        outside of the default Union File System and exist as 
+        normal directories and files on the host filesystem
+
+        // docker volume create demo_volume
+        // docker volume inspect demo_volume
+        // docker run -it -v ubuntu_vol:/tmp --name container_name ubuntu
