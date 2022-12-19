@@ -15,7 +15,7 @@
 ### 5. Docker Image
        Template to create a docker container
 
-### 6. Docket Container
+### 6. Docker Container
        Running instance of the docket image. Containers hold
        entire package to run the application.
 
