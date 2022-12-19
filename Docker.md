@@ -1,4 +1,3 @@
-
 # Docker Interview Questions
 ### 1. What is Docker?
        Docker is a platform for developing, shipping, and running applications
@@ -15,7 +14,7 @@
 ### 5. Docker Image
        Template to create a docker container
 
-### 6. Docker Container
+### 6. Docket Container
        Running instance of the docket image. Containers hold
        entire package to run the application.
 
@@ -59,5 +58,31 @@
        
        // Inside the container for run command
           docker exec -it <container-id> <command>
+       
+       // Docker stop running image
+          docker stop <docker-image> or docker stop <container-id> or docker rm <container-id>
+        
+       // Docker remove image
+          docker rmi <docker-image>
 
+       // Container restart
+          docker restart <container-id>
+
+       // Docker build Image
+          docker build --tag ubuntuimage.
+
+       // Docker Inspect
+          docker inspect <docker-image>
+        
+       // Other command
+          docker login
+          docker commit
+          docker push
+          docker copy
+          docker logs
+          docker volume
+          docker logout
+          docker info
+          docker --help
+ 
        
