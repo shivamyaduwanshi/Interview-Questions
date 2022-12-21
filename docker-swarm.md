@@ -1,3 +1,4 @@
+Youtube Link https://www.youtube.com/watch?v=bU2NNFJ-UXA&ab_channel=AutomationStepbyStep
 1. What is Docker Swarm
 2. Why to use it
 3. How to create and manage Docker Swarm
@@ -24,7 +25,8 @@ Pre-requisites
 https://docs.docker.com/get-started/p...
 
 Step 1 :  Create Docker machines (to act as nodes for Docker Swarm)   Create one machine as manager and others as workers
-    docker-machine create --driver hyperv manager1    docker-machine create --driver virtualbox manager1
+    docker-machine create --driver hyperv manager1  
+    docker-machine create --driver virtualbox manager1
 
    docker-machine:Error with pre-create check: “exit status 126”
    https://stackoverflow.com/questions/3...
@@ -40,7 +42,8 @@ Step 2 :  Check machine created successfully
 Step 3 :  SSH (connect) to docker machine
     docker-machine ssh manager1
 
-Step 4 :  Initialize Docker Swarm    docker swarm init --advertise-addr MANAGER_IP
+Step 4 :  Initialize Docker Swarm
+    docker swarm init --advertise-addr MANAGER_IP
     docker node ls
     (this command will work only in swarm manager and not in worker)
 
